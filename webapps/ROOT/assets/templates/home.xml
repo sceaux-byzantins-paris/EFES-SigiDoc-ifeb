@@ -37,138 +37,79 @@
 
     <kiln:block name="content-section">
       <main>
-        <div class="row">
+        <div class="row text-left">
           <div class="large-12 columns">
-            <img class="landing-img" src="/assets/images/seal.png"/>
-            <!-- <div class="landing-page-container">
-            <div class="landing-panel">
-            <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
+          <div class="landing-page-container">
+            <a href="{kiln:url-for-match('local-about', ($language, ()), 0)}" target="_blank" class="landing-panel">
+            <img class="panel-icon" src="/assets/google-icons/info_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
             <h3> About </h3>
             <p>Learn more about this portal</p>
-            </div>
-            <div class="landing-panel">
-            <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
+            </a>
+            <a href="{kiln:url-for-match('local-search', ($language, ()), 0)}" target="_blank" class="landing-panel">
+            <img class="panel-icon" src="/assets/google-icons/database_search_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
             <h3> Search </h3>
             <p>Search the collections</p>
-            </div>
-            <div class="landing-panel">
-            <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
+            </a>
+            <a href="{kiln:url-for-match('local-collections', ($language, ()), 0)}" target="_blank" class="landing-panel">
+            <img class="panel-icon" src="/assets/google-icons/apps_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
             <h3> Collections </h3>
             <p>See all collections</p>
-            </div>
-            <div class="landing-panel">
-            <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
+            </a>
+            <a href="{kiln:url-for-match('local-guidelines', ($language, ()), 0)}" target="_blank" class="landing-panel">
+            <img class="panel-icon" src="/assets/google-icons/auto_stories_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
             <h3> Guidelines </h3>
-            <p>More informations on how to encode</p>
-            </div>
-            <div class="landing-panel">
-            <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
+            <p>More information on how to search</p>
+            </a>
+            <a href="{kiln:url-for-match('local-team', ($language, ()), 0)}" target="_blank" class="landing-panel">
+            <img class="panel-icon" src="/assets/google-icons/groups_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
             <h3> Team </h3>
             <p>Get to know our team</p>
-            </div>
+            </a>
             <div class="landing-panel">
-            <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
-            <h3> 2048 </h3>
+            <img class="panel-icon" src="/assets/google-icons/data_usage_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
+              <h3> <xsl:value-of select="count(//doc)"></xsl:value-of></h3>
             <p>Objects in all collections</p>
             </div>
-          </div> -->
+          </div> 
             <div class="panel radius">
 
+              <h4>Mission Statement</h4>
               <!-- <div class="landing-img" id="site-title"></div> -->
-              <p>Le corpus sigillographique en cours de publication ici représente la première
-                entreprise d'édition systématique des sceaux de la Collection de l'IFEB. Les travaux
-                ont débuté dans le cadre du projet franco-allemand <a
-                  href="https://www.orient-mediterranee.com/program/reveler-le-potentiel-meconnu-des-sceaux-nouvelles-methodologies-pour-la-recherche-historique-dans-le-domaine-des-etudes-byzantines/"
-                  target="_blank">ANR-DFG <i>DigiByzSeal</i></a> et vont se poursuivre au-delà de la
-                date de fin du projet. L'ensemble choisi pour commencer cette publication est celui
-                des sceaux avec une légende comportant la mention d'un toponyme.</p>
-              <p>L'inventaire partiel constitué dans le cadre du projet <i>DigiByzSeal</i> fait
-                actuellement état de 2888 éléments, dont une partie, toutefois, se présente sous
-                forme de fragments, ce qui entraîne une certaine surestimation du total; le dernier
-                tiers environ est conservé en vrac dans les tiroirs du meuble des sceaux. La
-                totalité de la collection a reçu une nouvelle numérotation: les nouveaux numéros
-                d'inventaire ont été associés aux anciens quand ces derniers sont connus et ce
-                travail va se poursuivre au fur et à mesure de l'étude et de la publication des
-                bulles; les sceaux en vrac ont été temporairement disposés dans des pochettes
-                numérotées, avant que toute la collection ne soit rangée de manière plus apte à
-                en garantir la longue conservation.</p>
-              <h4>Présentation</h4>
-              <p>Les informations sur comment la collection aujourd’hui conservée à l’<a
-                  href="https://www.icp.fr/recherche/instituts-de-recherche/institut-francais-detudes-byzantines-ifeb"
-                  target="_blank">Institut Français d’Études Byzantines</a> a été constituée et sur
-                les circonstances de l’acquisition des sceaux sont fort peu nombreuses et viennent,
-                la plupart du temps, non pas des publications notamment de <a
-                  href="https://www.wikidata.org/wiki/Q15709784" target="_blank">Vitalien
-                  Laurent</a>, mais des documents et lettres conservés dans les archives de
-                l’Institut.</p>
-              <p>Les tous premiers sceaux entrés à l’Institut byzantin des <a
-                  href="https://www.wikidata.org/wiki/Q745449" target="_blank">Assomptionnistes</a>
-                de <a href="https://www.geonames.org/744906/kadikoey.html" target="_blank"
-                  >Kadiköy</a> furent acquis par <a href="https://www.wikidata.org/wiki/Q18912096"
-                  target="_blank">L. Rabois-Bousquet</a>, alias S. Pétridès, tandis que <a
-                  href="https://www.wikidata.org/wiki/Q3262880" target="_blank">L. Petit</a> réunit
-                198 sceaux latins et grecs, entrés ensuite au Médailler Vatican et qui se sont
-                révélés des copies de la collection Likhačev.</p>
-              <p>C’est dans le cadre du recensement pour son célèbre <i>Corpus</i> que Vitalien
-                Laurent entame la constitution de la collection de sceaux aujourd’hui conservée à
-                l’IFEB. Le <a href="https://www.college-de-france.fr/fr" target="_blank">Collège de
-                  France</a> a contribué, même si de manière limitée, à ces acquisitions: les fonds
-                alloués à Laurent pour son recensement sont en partie utilisés à cette fin, seule
-                façon, selon lui, de pouvoir avoir accès aux plombs. Ainsi, entre 1935 et 1938
-                Laurent fit l’acquisition de pas moins de 609 sceaux, en jouant sur le fait que les
-                antiquaires établissaient leur prix plus sur la base de l’état de conservation et
-                l’apparence que sur la valeur scientifique de ces objets. Ces bulles représentent
-                40% des environ 1500 collectionnées par Laurent pour l’Institut, qui en possédait 17
-                à l’arrivée du sigillographe (qui les publia en 1928). L’essentiel de la collection
-                semble avoir été constitué avant le départ d’Istanbul, mais les achats se sont
-                poursuivis jusqu’au décès de Laurent.</p>
-              <p>Dans son entreprise de collecte, Laurent avait des adversaires, nommés par lui
-                collectivement "yankees", des riches collectionneurs américains qui avaient un
-                potentiel financier bien supérieur à celui de l’Institut, et notamment <a
-                  href="https://www.doaks.org/resources/online-exhibits/before-byzantium/who-was-thomas-whittemore"
-                  target="_blank">T. Whittemore</a>. Toutefois, Laurent put bénéficier de l’aide de
-                deux membres de l’ambassade des États-Unis en Turquie. D’abord <a
-                  href="http://www.shawfoundation.org/about.php" target="_blank">G. Howland
-                Shaw</a>, Assistant Secretary of State (et collectionneur de <a
-                  href="https://www.doaks.org/@@search?Subject%3Alist=Shaw%20Catalogue"
-                  target="_blank">sceaux byzantins aujourd’hui à Dumbarton Oaks</a>), et puis l’une
-                de ses subordonnées à l’ambassade, <a
-                  href="https://en.wikipedia.org/wiki/Betty_Carp" target="_blank">Bertha “Betty”
-                  Carp</a>.</p>
-              <p>Mais déjà au moment de commencer la collecte pour l’Institut, Laurent fit le
-                constat que les temps auxquels les sceaux se vendaient pour pas cher étaient
-                désormais révolus. L’effort financier des Assomptionnistes montre bien l’importance
-                accordée à cette source: les données contenues dans la correspondance de Laurent
-                montrent bien l’exiguïté des moyens financiers à sa disposition, ce qui a permis
-                essentiellement l’achat de bulles de rebut: néanmoins, les fonds destinés par
-                l’Institut à l’achat des sceaux ne furent pas du tout négligeables, compte-tenu du
-                budget serré de cette institution, et le travail consacré à cette collection a sans
-                doute représenté un élément important de ses activités.</p>
-              <p>Présentation extraite de: Vivien Prigent, <i>De l’apport des «petits monuments»:
-                  faire de l’or avec du plomb</i>, dans Marie-Hélène Blanchet et Ionuţ-Alexandru
-                Tudorie (éd.), <i>L'apport des Assomptionnistes français aux études byzantines: une
-                  approche critique. Actes du Colloque de Bucarest, 25-27 septembre 2014</i>, Paris
-                2017 (Archives de l’Orient Chrétien 21), p. 385-452, ici p. 427-443.</p>
-              <p>Pour une histoire de l'Institut byzantin des Assomptionnistes, voir <a
-                  href="https://doi.org/10.3406/rebyz.1995.1900" target="_blank">Albert Failler,
-                    <i>Le centenaire de l'Institut byzantin des Assomptionnistes</i></a>, Revue des
-                Études Byzantines, 53 (1995), p. 5-40.</p>
+              <p>Over 100,000 Byzantine seals are housed in a wide array of collections,
+               many of which are only partially published or presented across scattered books,
+               articles or platforms. For the first time, this Portal offers a unified entry point,
+               allowing these dispersed holdings to be comprehensively searched—and unlocking new avenues for research.</p>
+
+              <p>The lack of publicly accessible information on seals has long been a major gap in Byzantine sigillography.
+               This initiative responds to that need by offering a user-friendly and pragmatic platform for sharing data,
+                with minimal requirements for participation.</p>
+
+              <p>Every seal description remains clearly credited to its respective contributor,
+               who retains full responsibility for the content.</p>
+
+               <p>With CSÆB, you can search a metacorpus comprising potentially tens of thousands of seals from various collections—all in a single click.</p>
+            </div>
+            <div class="panel radius">
+              <h4>Getting started</h4>
+              <p>Get in touch with the DigiByzSeal project team.</p> <!--MAIL ODER WEBSITE-->
+              <p>We will support you in exploring the most suitable option and guide you in preparing your data to meet the minimal participation standards.</p>
+              <p>Our goal is to make contributing as easy and accessible as possible.</p>
+
             </div>
             <div class="row">
-              <div class="large-12 columns text-center">
+              <div class="large-12 columns">
                 <div class="panel radius">
-                  <p>The full bibliographical description of this publication: <strong>[to be
-                      changed by each project]</strong>, available at: <a target="_blank" href="https://ifeb.sigidoc.huma-num.fr/">https://ifeb.sigidoc.huma-num.fr/</a>.</p>
-                  <p>This should be abbreviated to <strong>[to be changed by each
-                    project]</strong>.</p>
+                <h4>License</h4>
+                  <p>The full bibliographical description of this publication: <strong>[to be changed by each project]</strong>,
+                    available at: <a href="https://sigidoc.cceh.uni-koeln.de/en/">https://sigidoc.cceh.uni-koeln.de/en/</a>.</p> <p>This should be abbreviated to <strong>[to be changed by each project]</strong>.</p>
                   <p>GitHub repository available <a href="https://github.com/SigiDoc/EFES-SigiDoc"
                       target="_blank">https://github.com/SigiDoc/EFES-SigiDoc</a>.</p>
                   <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
                       <img alt="Creative Commons License" style="border-width:0"
                         src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
-                    </a> This work is licensed under a <a rel="license"
+                    </a> Authorship remains fully attributed to the original author(s). The content is shared under a <a rel="license"
                       href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA
-                      License</a> (unless otherwise stated).</p>
+                      License</a>.</p>
                 </div>
               </div>
             </div>
