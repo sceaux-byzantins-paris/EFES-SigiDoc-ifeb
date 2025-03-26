@@ -154,7 +154,6 @@
                   The content is shared under a <a rel="license"
                       href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA
                       License</a>.
-                  <a target="_blank" href="{kiln:url-for-match('local-about', ($language, ()), 0)}#Impressum">Legal notice and data privacy</a>
               </p>
             </footer>
           </kiln:block>
