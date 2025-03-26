@@ -236,6 +236,10 @@
    <field name="origdate" stored="true" indexed="false"
      multiValued="true" required="false" type="string"/> <!-- added for SigiDoc -->
    <field name="inv"      stored="true" indexed="false"
+     multiValued="false" required="false" type="string"/>   
+   <field name="imgv"      stored="true" indexed="false"
+     multiValued="false" required="false" type="string"/> 
+   <field name="imgr"      stored="true" indexed="false"
      multiValued="false" required="false" type="string"/> 
    <!-- catchall field, containing all other searchable text fields
         (implemented via copyField further on in this schema -->
