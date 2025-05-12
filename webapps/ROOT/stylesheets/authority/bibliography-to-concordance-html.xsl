@@ -42,7 +42,7 @@
 
   <xsl:template match="arr[@name='concordance_bibliography_item']/str">
     <li>
-      <a href="{kiln:url-for-match('local-epidoc-display-html', ($language, .), 0)}">
+      <a href="{kiln:url-for-match('local-epidoc-display-html', ($language, concat('ifeb-collection/'.)), 0)}">
         <xsl:value-of select="." />
       </a>
     </li>
